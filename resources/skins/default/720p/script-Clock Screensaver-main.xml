@@ -9,7 +9,7 @@
             <texture>black.png</texture>
         </control>
    
-		<control type="group" id="17">
+		<control type="group" id="3000">
 		  <description>My first group control</description>
 		  <posx>325</posx>
 		  <posy>60</posy>
@@ -21,7 +21,7 @@
 		  <onleft>1</onleft>
 		  <onright>1</onright>
 		  <align>center</align>
-			<control type="image" id="1">
+			<control type="image" id="3001">
 			  <description>Hour image</description>
 			  <posx>90</posx>
 			  <posy>60</posy>
@@ -34,7 +34,7 @@
 			  <bordersize>5</bordersize>
 			  <aspectratio>keep</aspectratio>
 			</control>		
-			<control type="image" id="2">
+			<control type="image" id="3002">
 			  <description>Serporator</description>
 			  <posx>210</posx>
 			  <posy>60</posy>
