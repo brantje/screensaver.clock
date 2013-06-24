@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <window>
   <controls>
-    <control type="image">
+    <control type="image" id="3001">
       <description>Black Background</description>
       <posx>0</posx>
       <posy>0</posy>
@@ -9,7 +9,7 @@
       <height>720</height>
       <texture>black.png</texture>
     </control>
-    <control type="group">
+    <control type="group" id="3002">
       <description>24h view</description>
       <posx>0</posx>
       <posy>0</posy>
@@ -18,7 +18,7 @@
       <visible>true</visible>
       <align>center</align>
       <aligny>center</aligny>
-      <control type="image">
+      <control type="image" id="3003">
         <description>Hour image</description>
         <posx>416</posx>
         <posy>221</posy>
@@ -30,7 +30,7 @@
         <texture>clock/$INFO[System.Time(hh)].png</texture>
         <aspectratio>keep</aspectratio>
       </control>
-      <control type="image">
+      <control type="image" id="3004">
         <description>time seperator</description>
         <posx>616</posx>
         <posy>221</posy>
@@ -42,7 +42,7 @@
         <texture>clock/colon.png</texture>
         <aspectratio>keep</aspectratio>
       </control>
-      <control type="image">
+      <control type="image" id="3005">
         <description>Minute image</description>
         <posx>666</posx>
         <posy>221</posy>
@@ -54,7 +54,7 @@
         <texture>clock/$INFO[System.Time(mm)].png</texture>
         <aspectratio>keep</aspectratio>
       </control>
-      <control type="label">
+      <control type="label" id="3006">
         <description>Date</description>
         <posx>416</posx>
         <posy>421</posy>

@@ -2,8 +2,8 @@
 <settings>
     <category label="32001">
          <setting id="debug" type="bool" label="32013" default="true"/>
-         <setting id="debug" type="bool" label="32016" default="false"/>
-		 <setting label="32014" type="labelenum" id="timecolor" lvalues="32021|32022|32023|32024|32025"/>
-		 <setting label="32015" type="labelenum" id="timecolor" lvalues="32021|32022|32023|32024|32025"/>
+         <setting id="hidedate" type="bool" label="32016" default="false"/>
+		 <setting label="32014" type="enum" id="timecolor" lvalues="32021|32026|32022|32023|32024|32025"/>
+		 <setting label="32015" type="enum" id="datecolor" lvalues="32021|32026|32022|32023|32024|32025"/>
     </category>
 </settings>

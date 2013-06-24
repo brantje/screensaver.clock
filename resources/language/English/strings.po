@@ -59,3 +59,7 @@ msgstr ""
 msgctxt "#32025"
 msgid "Purple"
 msgstr ""
+
+msgctxt "#32026"
+msgid "Gray"
+msgstr ""

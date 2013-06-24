@@ -15,7 +15,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
 
         def __init__(self, exit_callback):
             self.exit_callback = exit_callback
-
+			
         def onScreensaverDeactivated(self):
             print '3 ExitMonitor: sending exit_callback'
             self.exit_callback()
@@ -23,7 +23,9 @@ class Screensaver(xbmcgui.WindowXMLDialog):
     def onInit(self):
         print '2 Screensaver: onInit'
         self.monitor = self.ExitMonitor(self.exit)
-
+	if Addon.getSetting('hidedate') == 'true':
+		self.getControl(3006).setVisible(False)
+				
     def exit(self):
         print '4 Screensaver: Exit requested'
         self.close()
