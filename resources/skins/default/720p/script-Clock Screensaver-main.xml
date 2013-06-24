@@ -47,7 +47,7 @@
 			  <bordersize>5</bordersize>
 			  <aspectratio>keep</aspectratio>
 			</control>			
-			<control type="image" id="3">
+			<control type="image" id="3003">
 			  <description>Minute image</description>
 			  <posx>320</posx>
 			  <posy>60</posy>
@@ -60,7 +60,7 @@
 			  <bordersize>5</bordersize>
 			  <aspectratio>keep</aspectratio>
 			</control>
-			<control type="label">
+			<control type="label" id="3004">
 				<description>Date</description>
 				<posx>210</posx>
 				<posy>250</posy>
