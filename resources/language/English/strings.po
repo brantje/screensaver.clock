@@ -1,0 +1,61 @@
+# XBMC Media Center language file
+# Addon Name: Tvheadend HTSP Client
+# Addon id: screensaver.clock
+# Addon version: 0.0.1
+# Addon Provider: brantje, kibje
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Main Translation Project (Frodo)\n"
+"Report-Msgid-Bugs-To: http://trac.xbmc.org/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: XBMC Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/XBMC-Main-Frodo/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#settings labels
+
+msgctxt "#32001"
+msgid "General"
+msgstr ""
+
+msgctxt "#32013"
+msgid "Enable 24 hour"
+msgstr ""
+
+msgctxt "#32014"
+msgid "Clock color"
+msgstr ""
+
+msgctxt "#32015"
+msgid "Date color"
+msgstr ""
+
+msgctxt "#32016"
+msgid "Hide date"
+msgstr ""
+
+#colors
+msgctxt "#32021"
+msgid "White"
+msgstr ""
+
+msgctxt "#32022"
+msgid "Red"
+msgstr ""
+
+msgctxt "#32023"
+msgid "Green"
+msgstr ""
+
+msgctxt "#32024"
+msgid "Blue"
+msgstr ""
+
+msgctxt "#32025"
+msgid "Purple"
+msgstr ""

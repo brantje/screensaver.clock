@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="32001">
+         <setting id="debug" type="bool" label="32013" default="true"/>
+         <setting id="debug" type="bool" label="32016" default="false"/>
+		 <setting label="32014" type="labelenum" id="timecolor" lvalues="32021|32022|32023|32024|32025"/>
+		 <setting label="32015" type="labelenum" id="timecolor" lvalues="32021|32022|32023|32024|32025"/>
+    </category>
+</settings>
