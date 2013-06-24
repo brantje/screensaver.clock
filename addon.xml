@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.screensaver.test"
+       name="Clock Screensaver"
+       version="0.0.1"
+       provider-name="brantje">
+  <requires>
+    <import addon="xbmc.python"
+            version="2.0"/>
+  </requires>
+  <extension point="xbmc.ui.screensaver"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">A simple clock Screensaver</summary>
+    <description lang="en">A simple clock Screensaver</description>
+  </extension>
+</addon>
