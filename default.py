@@ -3,7 +3,7 @@ import xbmcaddon
 import xbmcgui
 import xbmc
 
-Addon = xbmcaddon.Addon('script.screensaver.test')
+Addon = xbmcaddon.Addon('screensaver.clock')
 
 __scriptname__ = Addon.getAddonInfo('name')
 __path__ = Addon.getAddonInfo('path')
