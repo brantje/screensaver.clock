@@ -16,7 +16,7 @@
             <height>720</height>
             <textcolor>FFFFFFFF</textcolor>
             <label>$INFO[System.Time]</label>
-			<font>WeatherTemp</font>
+			<font>font30</font>
             <align>center</align>
             <aligny>center</aligny>
         </control>
