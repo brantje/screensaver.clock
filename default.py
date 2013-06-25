@@ -2,7 +2,7 @@ import sys
 import xbmcaddon
 import xbmcgui
 import xbmc
-
+import random
 Addon = xbmcaddon.Addon('screensaver.clock')
 
 __scriptname__ = Addon.getAddonInfo('name')
@@ -24,8 +24,22 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         print '2 Screensaver: onInit'
         self.monitor = self.ExitMonitor(self.exit)
 	if Addon.getSetting('hidedate') == 'true':
-		self.getControl(3006).setVisible(False)
-				
+		self.getControl(30106).setVisible(False)
+	print 'Setting: %s' % Addon.getSetting('movement')
+	if Addon.getSetting('movement') == '1':
+		#Random movements
+		while(True):
+			container = self.getControl(30002)
+			screenx = self.getWidth()/2-175
+			screeny = self.getHeight()/2-75
+			print 'Screen X : %s' % screenx	
+			print 'Screen Y : %s' % screeny	
+			new_x = random.randint(-screenx,screenx)
+			new_y = random.randint(-screeny,screeny)
+
+			container.setPosition(new_x,new_y)
+			xbmc.sleep(3000)
+	
     def exit(self):
         print '4 Screensaver: Exit requested'
         self.close()

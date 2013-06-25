@@ -39,6 +39,23 @@ msgctxt "#32016"
 msgid "Hide date"
 msgstr ""
 
+msgctxt "#32017"
+msgid "Movement across screen"
+msgstr ""
+
+msgctxt "#32018"
+msgid "Bouce"
+msgstr ""
+
+msgctxt "#32019"
+msgid "Random"
+msgstr ""
+
+msgctxt "#32020"
+msgid "None"
+msgstr ""
+
+
 #colors
 msgctxt "#32021"
 msgid "White"

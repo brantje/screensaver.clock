@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
   <controls>
-    <control type="image" id="3001">
+    <control type="image">
       <description>Black Background</description>
       <posx>0</posx>
       <posy>0</posy>
@@ -9,55 +9,51 @@
       <height>720</height>
       <texture>black.png</texture>
     </control>
-    <control type="group" id="3002">
+    <control type="group" id="30002">
       <description>24h view</description>
       <posx>0</posx>
       <posy>0</posy>
-      <width>1280</width>
-      <height>720</height>
       <visible>true</visible>
       <align>center</align>
       <aligny>center</aligny>
-      <control type="image" id="3003">
+      <control type="image" id="30003">
         <description>Hour image</description>
         <posx>416</posx>
         <posy>221</posy>
         <width>200</width>
         <height>200</height>
-        <visible>true</visible>
         <colordiffuse>FFFFFFFF</colordiffuse>
         <fadetime>200</fadetime>
         <texture>clock/$INFO[System.Time(hh)].png</texture>
         <aspectratio>keep</aspectratio>
       </control>
-      <control type="image" id="3004">
+      <control type="image" id="30004">
         <description>time seperator</description>
         <posx>616</posx>
         <posy>221</posy>
         <width>50</width>
         <height>200</height>
-        <visible>true</visible>
         <colordiffuse>FFFFFFFF</colordiffuse>
         <fadetime>200</fadetime>
         <texture>clock/colon.png</texture>
         <aspectratio>keep</aspectratio>
       </control>
-      <control type="image" id="3005">
+      <control type="image" id="30005">
         <description>Minute image</description>
         <posx>666</posx>
         <posy>221</posy>
         <width>200</width>
         <height>200</height>
-        <visible>true</visible>
         <colordiffuse>FFFFFFFF</colordiffuse>
         <fadetime>200</fadetime>
         <texture>clock/$INFO[System.Time(mm)].png</texture>
         <aspectratio>keep</aspectratio>
       </control>
-      <control type="label" id="3006">
+
+      <control type="label" id="30106">
         <description>Date</description>
         <posx>416</posx>
-        <posy>421</posy>
+        <posy>390</posy>
         <width>450</width>
         <height>100</height>
         <textcolor>FFFFFFFF</textcolor>
