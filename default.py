@@ -3,6 +3,7 @@ import xbmcaddon
 import xbmcgui
 import xbmc
 import random
+from datetime import datetime
 Addon = xbmcaddon.Addon('screensaver.clock')
 
 __scriptname__ = Addon.getAddonInfo('name')
@@ -29,6 +30,13 @@ class Screensaver(xbmcgui.WindowXMLDialog):
 	if Addon.getSetting('movement') == '1':
 		#Random movements
 		while(True):
+			#update time
+			now  = datetime.now()
+			hour = now.hour
+			minute = now.minute
+			self.getControl(30005).setImage('clock/%s.png'%minute)
+			self.getControl(30003).setImage('clock/%s.png'%hour)
+
 			container = self.getControl(30002)
 			screenx = self.getWidth()/2-175
 			screeny = self.getHeight()/2-75
@@ -36,8 +44,8 @@ class Screensaver(xbmcgui.WindowXMLDialog):
 			print 'Screen Y : %s' % screeny	
 			new_x = random.randint(-screenx,screenx)
 			new_y = random.randint(-screeny,screeny)
-
 			container.setPosition(new_x,new_y)
+
 			xbmc.sleep(3000)
 	
     def exit(self):
