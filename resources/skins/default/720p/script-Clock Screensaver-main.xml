@@ -34,7 +34,7 @@
         <width>50</width>
         <height>200</height>
         <colordiffuse>FFFFFFFF</colordiffuse>
-        <texture>clock/colon.png</texture>
+        <texture></texture>
         <aspectratio>keep</aspectratio>
       </control>
       <control type="image" id="30005">

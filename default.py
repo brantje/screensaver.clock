@@ -50,6 +50,8 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.date_control = self.getControl(30106)
         self.container = self.getControl(30002)
         self.waitcounter = 0
+        #show colon
+        self.colon_control.setImage('clock/colon.png')
         #hiding date if needed
         if Addon.getSetting('hidedate') == 'true':
             self.getControl(30106).setVisible(False)
@@ -84,9 +86,9 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             #Random movements  movement = 1
             if Addon.getSetting('movement') == '1':
                 
-                if self.waitcounter == 9:
-                    new_x = random.randint(-screenx,screenx)
-                    new_y = random.randint(-screeny,screeny)
+                if self.waitcounter == 5:
+                    new_x = random.randint(-40,screenx)
+                    new_y = random.randint(-50,screeny)
                     self.container.setPosition(new_x,new_y)
                     self.waitcounter = 0
                 else:
