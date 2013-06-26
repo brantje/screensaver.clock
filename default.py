@@ -69,13 +69,16 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             now  = datetime.now()
             hour = now.hour
             minute = now.minute
-            screenx = self.getWidth()/2-200
-            screeny = self.getHeight()/2-75
+            screenx = 1280-self.container.getWidth() #830 self.getWidth()/2-200
+            screeny = 720-self.container.getHeight()#490 self.getHeight()/2-75
             self.minute_control.setImage('clock/%s.png'%minute)
             self.hour_control.setImage('clock/%s.png'%hour)
-            
+            self.date_control.setLabel(now.strftime("%A, %d %B %Y"))
             #no movements
             if Addon.getSetting('movement') == '0':
+                new_x = screenx/2
+                new_y = screeny/2
+                self.container.setPosition(new_x,new_y)
                 self.ColonBlink()
                 xbmc.sleep(500)			
             #Random movements  movement = 1
@@ -96,9 +99,9 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                 self.currentposition = self.container.getPosition()
                 new_x = self.currentposition[0]+self.vx
                 new_y = self.currentposition[1]+self.vy
-                if new_x >= screenx or new_x <= -screenx:
+                if new_x >= screenx or new_x <= -40:
                     self.vx = self.vx*-1
-                if new_y >= screeny or new_y <= -screeny:
+                if new_y >= screeny or new_y <= -50:
                     self.vy = self.vy*-1
                 self.container.setPosition(new_x,new_y)
                 self.ColonBlink()
@@ -117,7 +120,8 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                 self.colon_control.setVisible(True)
             else:
                 self.colon_control.setVisible(False)
-    
+        else:
+            self.colon_control.setVisible(True)
     def SetClockColor(self,a):
         a = int(a)
         kleur = ['0xC0FFFFFF','0xC0848484','0xC0FF0000','0xC064FE2E','0xC02EFEF7','0xC0FE2EF7']

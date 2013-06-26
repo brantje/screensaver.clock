@@ -13,13 +13,13 @@
       <description>24h view</description>
       <posx>0</posx>
       <posy>0</posy>
+	  <width>450</width>
+	  <height>230</height>
       <visible>true</visible>
-      <align>center</align>
-      <aligny>center</aligny>
       <control type="image" id="30003">
         <description>Hour image</description>
-        <posx>416</posx>
-        <posy>221</posy>
+        <posx>1</posx>
+        <posy>1</posy>
         <width>200</width>
         <height>200</height>
         <colordiffuse>FFFFFFFF</colordiffuse>
@@ -29,19 +29,18 @@
       </control>
       <control type="image" id="30004">
         <description>time seperator</description>
-        <posx>616</posx>
-        <posy>221</posy>
+        <posx>201</posx>
+        <posy>1</posy>
         <width>50</width>
         <height>200</height>
         <colordiffuse>FFFFFFFF</colordiffuse>
-        <fadetime>200</fadetime>
         <texture>clock/colon.png</texture>
         <aspectratio>keep</aspectratio>
       </control>
       <control type="image" id="30005">
         <description>Minute image</description>
-        <posx>666</posx>
-        <posy>221</posy>
+        <posx>251</posx>
+        <posy>1</posy>
         <width>200</width>
         <height>200</height>
         <colordiffuse>FFFFFFFF</colordiffuse>
@@ -52,13 +51,13 @@
 
       <control type="label" id="30106">
         <description>Date</description>
-        <posx>416</posx>
-        <posy>390</posy>
+        <posx>1</posx>
+        <posy>201</posy>
         <width>450</width>
         <height>100</height>
         <textcolor>FFFFFFFF</textcolor>
         <align>center</align>
-        <label>$INFO[System.Date]</label>
+        <label></label>
         <font>font14</font>
       </control>
     </control>
