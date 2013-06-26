@@ -43,49 +43,22 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.abort_requested = False
         self.started = False
         self.exit_monitor = self.ExitMonitor(self.exit)
-
         self.bouncespeed = int(Addon.getSetting('bouncespeed'))
         self.hour_control = self.getControl(30003)
         self.colon_control = self.getControl(30004)
         self.minute_control = self.getControl(30005)
         self.date_control = self.getControl(30106)
         self.container = self.getControl(30002)
-	    #hiding date if needed
+        #hiding date if needed
         if Addon.getSetting('hidedate') == 'true':
-		    self.getControl(30106).setVisible(False)
-	    #do we want a background?
+            self.getControl(30106).setVisible(False)
+        #do we want a background?
         if Addon.getSetting('enablebg') == 'true':
             self.getControl(30020).setImage(Addon.getSetting('backgroundlocation'))
-	
+    
         self.vx = random.randint(3,10)    # x velocity def=10
         self.vy = random.randint(3,10)    # y velocity def=5
-        if Addon.getSetting('timecolor') == "1": #gray
-            self.hour_control.setColorDiffuse('0xC0848484')
-            self.colon_control.setColorDiffuse('0xC0848484')
-            self.minute_control.setColorDiffuse('0xC0848484')
-        if Addon.getSetting('timecolor') == "2": #red
-            self.hour_control.setColorDiffuse('0xC0FF0000')
-            self.colon_control.setColorDiffuse('0xC0FF0000')
-            self.minute_control.setColorDiffuse('0xC0FF0000')
-        if Addon.getSetting('timecolor') == "2": #red
-            self.hour_control.setColorDiffuse('0xC0FF0000')
-            self.colon_control.setColorDiffuse('0xC0FF0000')
-            self.minute_control.setColorDiffuse('0xC0FF0000')
-        
-        if Addon.getSetting('timecolor') == "3": #green
-            self.hour_control.setColorDiffuse('0xC064FE2E')
-            self.colon_control.setColorDiffuse('0xC064FE2E')
-            self.minute_control.setColorDiffuse('0xC064FE2E')
-        
-        if Addon.getSetting('timecolor') == "4": #blue
-            self.hour_control.setColorDiffuse('0xC02EFEF7')
-            self.colon_control.setColorDiffuse('0xC02EFEF7')
-            self.minute_control.setColorDiffuse('0xC02EFEF7')
-        
-        if Addon.getSetting('timecolor') == "5": #Purple
-            self.hour_control.setColorDiffuse('0xC0FE2EF7')
-            self.colon_control.setColorDiffuse('0xC0FE2EF7')
-            self.minute_control.setColorDiffuse('0xC0FE2EF7')		
+        ccolor = self.SetClockColor(Addon.getSetting('timecolor'))
         self.DisplayTime()
 
 
@@ -116,12 +89,20 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                     self.vy = self.vy*-1
                 self.container.setPosition(new_x,new_y)
                 xbmc.sleep(self.bouncespeed)      
-		if self.abort_requested:
-			self.log('slideshow abort_requested')
-			self.exit()
-			return
-		xbmc.sleep(500)
-
+        if self.abort_requested:
+            self.log('Clock abort_requested')
+            self.exit()
+            return
+        xbmc.sleep(500)
+    
+    def SetClockColor(self,a):
+        a = int(a)
+        kleur = ['0xC0FFFFFF','0xC0848484','0xC0FF0000','0xC064FE2E','0xC02EFEF7','0xC0FE2EF7']
+        self.log('Color selected: %s'%kleur[a])
+        self.hour_control.setColorDiffuse(kleur[a])
+        self.colon_control.setColorDiffuse(kleur[a])
+        self.minute_control.setColorDiffuse(kleur[a])
+    
     def exit(self):
         self.abort_requested = True
         self.exit_monitor = None
