@@ -23,38 +23,41 @@ msgctxt "#32001"
 msgid "General"
 msgstr ""
 
-msgctxt "#32013"
+msgctxt "#32010"
 msgid "Enable 24 hour"
 msgstr ""
 
-msgctxt "#32014"
+msgctxt "#32011"
 msgid "Clock color"
 msgstr ""
 
-msgctxt "#32015"
+msgctxt "#32012"
 msgid "Date color"
 msgstr ""
 
-msgctxt "#32016"
+msgctxt "#32013"
 msgid "Hide date"
 msgstr ""
 
-msgctxt "#32017"
+msgctxt "#32014"
 msgid "Movement across screen"
 msgstr ""
 
-msgctxt "#32018"
+msgctxt "#32015"
 msgid "Bouce"
 msgstr ""
 
-msgctxt "#32019"
+msgctxt "#32016"
 msgid "Random"
 msgstr ""
 
-msgctxt "#32020"
+msgctxt "#32017"
 msgid "None"
 msgstr ""
 
+msgctxt "#32018"
+msgid "Bounce speed (higher is slower)"
+msgstr ""
 
 #colors
 msgctxt "#32021"
@@ -80,3 +83,16 @@ msgstr ""
 msgctxt "#32026"
 msgid "Gray"
 msgstr ""
+
+msgctxt "#32030"
+msgid "Background settings"
+msgstr ""
+
+msgctxt "#32031"
+msgid "Enable background"
+msgstr ""
+
+msgctxt "#32032"
+msgid "Select image location"
+msgstr ""
+

@@ -24,17 +24,52 @@ class Screensaver(xbmcgui.WindowXMLDialog):
     def onInit(self):
         print '2 Screensaver: onInit'
         self.monitor = self.ExitMonitor(self.exit)
+	#hiding date if needed
 	if Addon.getSetting('hidedate') == 'true':
 		self.getControl(30106).setVisible(False)
-	print 'Setting: %s' % Addon.getSetting('movement')
+	#do we want a background?
+	if Addon.getSetting('enablebg') == 'true':
+		self.getControl(30020).setImage(Addon.getSetting('backgroundlocation'))
 	
+	self.bouncespeed = int(Addon.getSetting('bouncespeed'))
 	self.hour_control = self.getControl(30003)
-	self.minute_control = self.getControl(30005)	
+	self.colon_control = self.getControl(30004)
+	self.minute_control = self.getControl(30005)
+	self.date_control = self.getControl(30106)
 	self.container = self.getControl(30002)
 	#bounce settings
 	# The velocity, or distance moved per time step
-	vx = 10    # x velocity
-	vy = 5    # y velocity
+	vx = random.randint(3,10)    # x velocity def=10
+	vy = random.randint(3,10)    # y velocity def=5
+	
+	#color shit
+	print 'Time color: %s' % Addon.getSetting('timecolor')
+	print 'Time date: %s' % Addon.getSetting('datecolor')
+	if Addon.getSetting('timecolor') == "1": #gray
+		self.hour_control.setColorDiffuse('0xC0848484')
+		self.colon_control.setColorDiffuse('0xC0848484')
+		self.minute_control.setColorDiffuse('0xC0848484')
+	
+	if Addon.getSetting('timecolor') == "2": #red
+		self.hour_control.setColorDiffuse('0xC0FF0000')
+		self.colon_control.setColorDiffuse('0xC0FF0000')
+		self.minute_control.setColorDiffuse('0xC0FF0000')
+	
+	if Addon.getSetting('timecolor') == "3": #green
+		self.hour_control.setColorDiffuse('0xC064FE2E')
+		self.colon_control.setColorDiffuse('0xC064FE2E')
+		self.minute_control.setColorDiffuse('0xC064FE2E')
+	
+	if Addon.getSetting('timecolor') == "4": #blue
+		self.hour_control.setColorDiffuse('0xC02EFEF7')
+		self.colon_control.setColorDiffuse('0xC02EFEF7')
+		self.minute_control.setColorDiffuse('0xC02EFEF7')
+	
+	if Addon.getSetting('timecolor') == "5": #Purple
+		self.hour_control.setColorDiffuse('0xC0FE2EF7')
+		self.colon_control.setColorDiffuse('0xC0FE2EF7')
+		self.minute_control.setColorDiffuse('0xC0FE2EF7')	
+	
 	while(True):
 		#update time
 		now  = datetime.now()
@@ -60,7 +95,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
 			if new_y >= screeny or new_y <= -screeny:
 				vy = vy*-1
 			self.container.setPosition(new_x,new_y)
-			xbmc.sleep(100)
+			xbmc.sleep(self.bouncespeed)
 	
     def exit(self):
         print '4 Screensaver: Exit requested'

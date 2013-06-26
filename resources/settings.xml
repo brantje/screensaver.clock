@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
     <category label="32001">
-         <setting id="debug" type="bool" label="32013" default="true"/>
-         <setting id="hidedate" type="bool" label="32016" default="false"/>
-         <setting label="32017" type="enum" id="movement" lvalues="32020|32019|32018"/>
-		 <setting label="32014" type="enum" id="timecolor" lvalues="32021|32026|32022|32023|32024|32025"/>
-		 <setting label="32015" type="enum" id="datecolor" lvalues="32021|32026|32022|32023|32024|32025"/>
+         <setting id="debug" type="bool" label="32010" default="true"/>
+         <setting id="hidedate" type="bool" label="32013" default="false"/>
+         <setting label="32014" type="enum" id="movement" lvalues="32017|32016|32015"/>
+		 <setting label="32018" type="slider" id="bouncespeed" default="100" range="10,10,5000" option="int" enable="eq(-1,2)" visible="eq(-1,2)"/>
+		 <setting label="32011" type="enum" id="timecolor" lvalues="32021|32026|32022|32023|32024|32025"/>
+	<!--	 <setting label="32012" type="enum" id="datecolor" lvalues="32021|32026|32022|32023|32024|32025"/> -->
+    </category>
+	 <category label="32030">
+         <setting label="32031" type="bool" id="enablebg" default="false"/>
+		 <setting label="32032" id="backgroundlocation" type="image" enable="eq(-1,true)"  visible="eq(-1,true)"/>
     </category>
 </settings>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
   <controls>
-    <control type="image">
+    <control type="image" id="30020">
       <description>Black Background</description>
       <posx>0</posx>
       <posy>0</posy>
