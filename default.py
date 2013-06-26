@@ -44,7 +44,6 @@ class Screensaver(xbmcgui.WindowXMLDialog):
 	
 	#color shit
 	print 'Time color: %s' % Addon.getSetting('timecolor')
-	print 'Time date: %s' % Addon.getSetting('datecolor')
 	if Addon.getSetting('timecolor') == "1": #gray
 		self.hour_control.setColorDiffuse('0xC0848484')
 		self.colon_control.setColorDiffuse('0xC0848484')
