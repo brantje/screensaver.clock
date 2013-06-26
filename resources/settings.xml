@@ -3,8 +3,9 @@
     <category label="32001">
          <setting id="debug" type="bool" label="32010" default="true"/>
          <setting id="hidedate" type="bool" label="32013" default="false"/>
+         <setting id="colonblink" type="bool" label="32019" default="true"/>
          <setting label="32014" type="enum" id="movement" lvalues="32017|32016|32015"/>
-		 <setting label="32018" type="slider" id="bouncespeed" default="100" range="10,10,5000" option="int" enable="eq(-1,2)" visible="eq(-1,2)"/>
+		 <setting label="32018" type="slider" id="bouncespeed" default="100" range="10,10,1000" option="int" enable="eq(-1,2)" visible="eq(-1,2)"/>
 		 <setting label="32011" type="enum" id="timecolor" lvalues="32021|32026|32022|32023|32024|32025" default="0"/>
 	<!--	 <setting label="32012" type="enum" id="datecolor" lvalues="32021|32026|32022|32023|32024|32025"/> -->
     </category>

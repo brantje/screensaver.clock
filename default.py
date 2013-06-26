@@ -49,6 +49,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.minute_control = self.getControl(30005)
         self.date_control = self.getControl(30106)
         self.container = self.getControl(30002)
+        self.waitcounter = 0
         #hiding date if needed
         if Addon.getSetting('hidedate') == 'true':
             self.getControl(30106).setVisible(False)
@@ -72,12 +73,24 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             screeny = self.getHeight()/2-75
             self.minute_control.setImage('clock/%s.png'%minute)
             self.hour_control.setImage('clock/%s.png'%hour)
+            
+            #no movements
+            if Addon.getSetting('movement') == '0':
+                self.ColonBlink()
+                xbmc.sleep(500)			
             #Random movements  movement = 1
             if Addon.getSetting('movement') == '1':
-                new_x = random.randint(-screenx,screenx)
-                new_y = random.randint(-screeny,screeny)
-                self.container.setPosition(new_x,new_y)
-                xbmc.sleep(3000)
+                
+                if self.waitcounter == 9:
+                    new_x = random.randint(-screenx,screenx)
+                    new_y = random.randint(-screeny,screeny)
+                    self.container.setPosition(new_x,new_y)
+                    self.waitcounter = 0
+                else:
+                    self.waitcounter += 1
+                
+                self.ColonBlink()
+                xbmc.sleep(500)
             #Bounce movement=2
             if Addon.getSetting('movement') == '2':
                 self.currentposition = self.container.getPosition()
@@ -88,12 +101,22 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                 if new_y >= screeny or new_y <= -screeny:
                     self.vy = self.vy*-1
                 self.container.setPosition(new_x,new_y)
-                xbmc.sleep(self.bouncespeed)      
+                self.ColonBlink()
+                xbmc.sleep(self.bouncespeed) 
+                    
         if self.abort_requested:
             self.log('Clock abort_requested')
             self.exit()
             return
-        xbmc.sleep(500)
+        
+    
+    def ColonBlink(self):
+        if Addon.getSetting('colonblink') == 'true':
+            second = datetime.now().second
+            if second%2==0:
+                self.colon_control.setVisible(True)
+            else:
+                self.colon_control.setVisible(False)
     
     def SetClockColor(self,a):
         a = int(a)

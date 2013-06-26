@@ -59,6 +59,10 @@ msgctxt "#32018"
 msgid "Bounce speed (higher is slower)"
 msgstr ""
 
+msgctxt "#32019"
+msgid "Colon blinking"
+msgstr ""
+
 #colors
 msgctxt "#32021"
 msgid "White"
