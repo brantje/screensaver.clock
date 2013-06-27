@@ -10,7 +10,8 @@
 	<!--	 <setting label="32012" type="enum" id="datecolor" lvalues="32021|32026|32022|32023|32024|32025"/> -->
     </category>
 	 <category label="32030">
-         <setting label="32031" type="bool" id="enablebg" default="false"/>
-		 <setting label="32032" id="backgroundlocation" type="image" enable="eq(-1,true)"  visible="eq(-1,true)"/>
+         <setting label="32031" type="enum" id="enablebg" lvalues="32017|32032|32033" default="0"/>
+		 <setting label="32034" id="backgroundlocation" type="image" default="" enable="eq(-1,1)"  visible="eq(-1,1)"/>
+		 <setting label="32035" id="backgroundlocationdir" type="folder" default="" enable="eq(-2,2)"  visible="eq(-2,2)"/>
     </category>
 </settings>

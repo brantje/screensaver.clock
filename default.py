@@ -44,26 +44,30 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.started = False
         self.exit_monitor = self.ExitMonitor(self.exit)
         self.bouncespeed = int(Addon.getSetting('bouncespeed'))
+        self.background = self.getControl(30020)
         self.hour_control = self.getControl(30003)
         self.colon_control = self.getControl(30004)
         self.minute_control = self.getControl(30005)
         self.date_control = self.getControl(30106)
         self.container = self.getControl(30002)
+        self.configmultibackground = self.getControl(30107)
         self.waitcounter = 0
         #show colon
         self.colon_control.setImage('clock/colon.png')
         #hiding date if needed
         if Addon.getSetting('hidedate') == 'true':
-            self.getControl(30106).setVisible(False)
+             self.date_control.setVisible(False)
         #do we want a background?
-        if Addon.getSetting('enablebg') == 'true':
-            self.getControl(30020).setImage(Addon.getSetting('backgroundlocation'))
+        if Addon.getSetting('enablebg') == '1':
+            self.background.setImage(Addon.getSetting('backgroundlocation'))
+        if Addon.getSetting('enablebg') == '2':
+            self.configmultibackground.setLabel(Addon.getSetting('backgroundlocationdir'))
     
-        self.vx = random.randint(3,10)    # x velocity def=10
-        self.vy = random.randint(3,10)    # y velocity def=5
+        self.vx = random.randint(3,10) # x velocity def=10
+        self.vy = random.randint(3,10) # y velocity def=5
         ccolor = self.SetClockColor(Addon.getSetting('timecolor'))
         self.DisplayTime()
-
+        
 
     def DisplayTime(self):
         while not self.abort_requested:
@@ -113,8 +117,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             self.log('Clock abort_requested')
             self.exit()
             return
-        
-    
+
     def ColonBlink(self):
         if Addon.getSetting('colonblink') == 'true':
             second = datetime.now().second

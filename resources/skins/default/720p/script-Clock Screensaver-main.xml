@@ -9,6 +9,18 @@
       <height>720</height>
       <texture>black.png</texture>
     </control>
+	<control type="multiimage" id="30030">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath background="true">$INFO[Control.GetLabel(30107)]</imagepath>
+			<timeperimage>10000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+			<animation effect="fade" time="200">WindowClose</animation>
+	</control>
     <control type="group" id="30002">
       <description>24h view</description>
       <posx>0</posx>
@@ -59,7 +71,18 @@
         <align>center</align>
         <label></label>
         <font>font14</font>
-      </control>
+      </control>  
+	  <control type="label" id="30107">
+        <description>Dir container for slide show</description>
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>0</width>
+        <height>0</height>
+        <align>center</align>
+        <label></label>
+        <font>font14</font>
+		<visible>false</visible>
+      </control>	 
     </control>
   </controls>
 </window>

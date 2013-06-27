@@ -93,10 +93,22 @@ msgid "Background settings"
 msgstr ""
 
 msgctxt "#32031"
-msgid "Enable background"
+msgid "Background type"
 msgstr ""
 
 msgctxt "#32032"
-msgid "Select image location"
+msgid "Single image"
+msgstr ""
+
+msgctxt "#32033"
+msgid "Directory"
+msgstr ""
+
+msgctxt "#32034"
+msgid "Image location"
+msgstr ""
+
+msgctxt "#32035"
+msgid "Select directory"
 msgstr ""
 
