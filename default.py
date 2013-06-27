@@ -43,7 +43,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.abort_requested = False
         self.started = False
         self.exit_monitor = self.ExitMonitor(self.exit)
-        self.bouncespeed = int(Addon.getSetting('bouncespeed'))
+        self.bouncespeed = int(float(Addon.getSetting('bouncespeed')))
         self.background = self.getControl(30020)
         self.hour_control = self.getControl(30003)
         self.colon_control = self.getControl(30004)
