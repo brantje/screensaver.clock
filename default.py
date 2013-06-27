@@ -48,6 +48,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.hour_control = self.getControl(30003)
         self.colon_control = self.getControl(30004)
         self.minute_control = self.getControl(30005)
+        self.ampm_control = self.getControl(30007)
         self.date_control = self.getControl(30106)
         self.container = self.getControl(30002)
         self.configmultibackground = self.getControl(30107)
@@ -75,11 +76,26 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             now  = datetime.now()
             hour = now.hour
             minute = now.minute
-            screenx = 1280-self.container.getWidth() #830 self.getWidth()/2-200
-            screeny = 720-self.container.getHeight()#490 self.getHeight()/2-75
+            screeny = 720-self.container.getHeight()
+            if Addon.getSetting('ampm') == "false":
+                screenx = 1280-self.container.getWidth() #830 self.getWidth()/2-200
+            else:
+                screenx = 1280-self.container.getWidth()-100 #830 self.getWidth()/2-200
+            
+                
+            if Addon.getSetting('twentyfour') == "false" and hour > 12:
+                hour -= 12
+                if Addon.getSetting('ampm') == "true":
+                    self.ampm_control.setImage('clock/pm.png')
+            else:
+                if Addon.getSetting('ampm') == "true":
+                    self.ampm_control.setImage('clock/am.png')
+            #Set the time
+            
             self.minute_control.setImage('clock/%s.png'%minute)
             self.hour_control.setImage('clock/%s.png'%hour)
             self.date_control.setLabel(now.strftime("%A, %d %B %Y"))
+            
             #no movements
             if Addon.getSetting('movement') == '0':
                 new_x = screenx/2
@@ -129,11 +145,12 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             self.colon_control.setVisible(True)
     def SetClockColor(self,a):
         a = int(a)
-        kleur = ['0xC0FFFFFF','0xC0848484','0xC0FF0000','0xC064FE2E','0xC02EFEF7','0xC0FE2EF7']
+        kleur = ['0xCFFFFFFF','0xC0848484','0xC0FF0000','0xC064FE2E','0xC02EFEF7','0xC0FE2EF7']
         self.log('Color selected: %s'%kleur[a])
         self.hour_control.setColorDiffuse(kleur[a])
         self.colon_control.setColorDiffuse(kleur[a])
         self.minute_control.setColorDiffuse(kleur[a])
+        self.ampm_control.setColorDiffuse(kleur[a])
     
     def exit(self):
         self.abort_requested = True

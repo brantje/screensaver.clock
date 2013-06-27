@@ -63,6 +63,10 @@ msgctxt "#32019"
 msgid "Colon blinking"
 msgstr ""
 
+msgctxt "#32020"
+msgid "Enable AM/PM"
+msgstr ""
+
 #colors
 msgctxt "#32021"
 msgid "White"

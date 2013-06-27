@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
     <category label="32001">
-         <setting id="debug" type="bool" label="32010" default="true"/>
+         <setting id="twentyfour" type="bool" label="32010" default="true"/>
+         <setting id="ampm" type="bool" label="32020" default="false" visible="eq(-1,false)"/>
          <setting id="hidedate" type="bool" label="32013" default="false"/>
          <setting id="colonblink" type="bool" label="32019" default="true"/>
          <setting label="32014" type="enum" id="movement" lvalues="32017|32016|32015"/>
