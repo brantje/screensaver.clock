@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="screensaver.clock"
        name="Clock Screensaver"
-       version="0.0.1"
+       version="0.5.0"
        provider-name="brantje|kibje">
   <requires>
     <import addon="xbmc.python"
