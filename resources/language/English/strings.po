@@ -67,30 +67,6 @@ msgctxt "#32020"
 msgid "Enable AM/PM"
 msgstr ""
 
-#colors
-msgctxt "#32021"
-msgid "White"
-msgstr ""
-
-msgctxt "#32022"
-msgid "Red"
-msgstr ""
-
-msgctxt "#32023"
-msgid "Green"
-msgstr ""
-
-msgctxt "#32024"
-msgid "Blue"
-msgstr ""
-
-msgctxt "#32025"
-msgid "Purple"
-msgstr ""
-
-msgctxt "#32026"
-msgid "Gray"
-msgstr ""
 
 msgctxt "#32030"
 msgid "Background settings"
@@ -115,4 +91,573 @@ msgstr ""
 msgctxt "#32035"
 msgid "Select directory"
 msgstr ""
+
+#colors 
+
+#colors 33000 and up
+msgctxt "#33000"
+msgid "Aliceblue"
+msgstr ""
+
+msgctxt "#33001"
+msgid "Antiquewhite"
+msgstr ""
+
+msgctxt "#33002"
+msgid "Aqua"
+msgstr ""
+
+msgctxt "#33003"
+msgid "Aquamarine"
+msgstr ""
+
+msgctxt "#33004"
+msgid "Azure"
+msgstr ""
+
+msgctxt "#33005"
+msgid "Beige"
+msgstr ""
+
+msgctxt "#33006"
+msgid "Bisque"
+msgstr ""
+
+msgctxt "#33007"
+msgid "Black"
+msgstr ""
+
+msgctxt "#33008"
+msgid "Blanchedalmond"
+msgstr ""
+
+msgctxt "#33009"
+msgid "Blue"
+msgstr ""
+
+msgctxt "#33010"
+msgid "Blueviolet"
+msgstr ""
+
+msgctxt "#33011"
+msgid "Brown"
+msgstr ""
+
+msgctxt "#33012"
+msgid "Burlywood"
+msgstr ""
+
+msgctxt "#33013"
+msgid "Cadetblue"
+msgstr ""
+
+msgctxt "#33014"
+msgid "Chartreuse"
+msgstr ""
+
+msgctxt "#33015"
+msgid "Chocolate"
+msgstr ""
+
+msgctxt "#33016"
+msgid "Coral"
+msgstr ""
+
+msgctxt "#33017"
+msgid "Cornflowerblue"
+msgstr ""
+
+msgctxt "#33018"
+msgid "Cornsilk"
+msgstr ""
+
+msgctxt "#33019"
+msgid "Crimson"
+msgstr ""
+
+msgctxt "#33020"
+msgid "Cyan"
+msgstr ""
+
+msgctxt "#33021"
+msgid "Darkblue"
+msgstr ""
+
+msgctxt "#33022"
+msgid "Darkcyan"
+msgstr ""
+
+msgctxt "#33023"
+msgid "Darkgoldenrod"
+msgstr ""
+
+msgctxt "#33024"
+msgid "Darkgray"
+msgstr ""
+
+msgctxt "#33025"
+msgid "Darkgreen"
+msgstr ""
+
+msgctxt "#33026"
+msgid "Darkkhaki"
+msgstr ""
+
+msgctxt "#33027"
+msgid "Darkmagenta"
+msgstr ""
+
+msgctxt "#33028"
+msgid "Darkolivegreen"
+msgstr ""
+
+msgctxt "#33029"
+msgid "Darkorange"
+msgstr ""
+
+msgctxt "#33030"
+msgid "Darkorchid"
+msgstr ""
+
+msgctxt "#33031"
+msgid "Darkred"
+msgstr ""
+
+msgctxt "#33032"
+msgid "Darksalmon"
+msgstr ""
+
+msgctxt "#33033"
+msgid "Darkseagreen"
+msgstr ""
+
+msgctxt "#33034"
+msgid "Darkslateblue"
+msgstr ""
+
+msgctxt "#33035"
+msgid "Darkslategray"
+msgstr ""
+
+msgctxt "#33036"
+msgid "Darkturquoise"
+msgstr ""
+
+msgctxt "#33037"
+msgid "Darkviolet"
+msgstr ""
+
+msgctxt "#33038"
+msgid "Deeppink"
+msgstr ""
+
+msgctxt "#33039"
+msgid "Deepskyblue"
+msgstr ""
+
+msgctxt "#33040"
+msgid "Dimgray"
+msgstr ""
+
+msgctxt "#33041"
+msgid "Dodgerblue"
+msgstr ""
+
+msgctxt "#33042"
+msgid "Firebrick"
+msgstr ""
+
+msgctxt "#33043"
+msgid "Floralwhite"
+msgstr ""
+
+msgctxt "#33044"
+msgid "Forestgreen"
+msgstr ""
+
+msgctxt "#33045"
+msgid "Fuchsia"
+msgstr ""
+
+msgctxt "#33046"
+msgid "Gainsboro"
+msgstr ""
+
+msgctxt "#33047"
+msgid "Ghostwhite"
+msgstr ""
+
+msgctxt "#33048"
+msgid "Gold"
+msgstr ""
+
+msgctxt "#33049"
+msgid "Goldenrod"
+msgstr ""
+
+msgctxt "#33050"
+msgid "Gray"
+msgstr ""
+
+msgctxt "#33051"
+msgid "Green"
+msgstr ""
+
+msgctxt "#33052"
+msgid "Greenyellow"
+msgstr ""
+
+msgctxt "#33053"
+msgid "Honeydew"
+msgstr ""
+
+msgctxt "#33054"
+msgid "Hotpink"
+msgstr ""
+
+msgctxt "#33055"
+msgid "Indianred "
+msgstr ""
+
+msgctxt "#33056"
+msgid "Indigo "
+msgstr ""
+
+msgctxt "#33057"
+msgid "Ivory"
+msgstr ""
+
+msgctxt "#33058"
+msgid "Khaki"
+msgstr ""
+
+msgctxt "#33059"
+msgid "Lavender"
+msgstr ""
+
+msgctxt "#33060"
+msgid "Lavenderblush"
+msgstr ""
+
+msgctxt "#33061"
+msgid "Lawngreen"
+msgstr ""
+
+msgctxt "#33062"
+msgid "Lemonchiffon"
+msgstr ""
+
+msgctxt "#33063"
+msgid "Lightblue"
+msgstr ""
+
+msgctxt "#33064"
+msgid "Lightcoral"
+msgstr ""
+
+msgctxt "#33065"
+msgid "Lightcyan"
+msgstr ""
+
+msgctxt "#33066"
+msgid "Lightgoldenrodyellow"
+msgstr ""
+
+msgctxt "#33067"
+msgid "Lightgrey"
+msgstr ""
+
+msgctxt "#33068"
+msgid "Lightgreen"
+msgstr ""
+
+msgctxt "#33069"
+msgid "Lightpink"
+msgstr ""
+
+msgctxt "#33070"
+msgid "Lightsalmon"
+msgstr ""
+
+msgctxt "#33071"
+msgid "Lightseagreen"
+msgstr ""
+
+msgctxt "#33072"
+msgid "Lightskyblue"
+msgstr ""
+
+msgctxt "#33073"
+msgid "Lightslategray"
+msgstr ""
+
+msgctxt "#33074"
+msgid "Lightsteelblue"
+msgstr ""
+
+msgctxt "#33075"
+msgid "Lightyellow"
+msgstr ""
+
+msgctxt "#33076"
+msgid "Lime"
+msgstr ""
+
+msgctxt "#33077"
+msgid "Limegreen"
+msgstr ""
+
+msgctxt "#33078"
+msgid "Linen"
+msgstr ""
+
+msgctxt "#33079"
+msgid "Magenta"
+msgstr ""
+
+msgctxt "#33080"
+msgid "Maroon"
+msgstr ""
+
+msgctxt "#33081"
+msgid "Mediumaquamarine"
+msgstr ""
+
+msgctxt "#33082"
+msgid "Mediumblue"
+msgstr ""
+
+msgctxt "#33083"
+msgid "Mediumorchid"
+msgstr ""
+
+msgctxt "#33084"
+msgid "Mediumpurple"
+msgstr ""
+
+msgctxt "#33085"
+msgid "Mediumseagreen"
+msgstr ""
+
+msgctxt "#33086"
+msgid "Mediumslateblue"
+msgstr ""
+
+msgctxt "#33087"
+msgid "Mediumspringgreen"
+msgstr ""
+
+msgctxt "#33088"
+msgid "Mediumturquoise"
+msgstr ""
+
+msgctxt "#33089"
+msgid "Mediumvioletred"
+msgstr ""
+
+msgctxt "#33090"
+msgid "Midnightblue"
+msgstr ""
+
+msgctxt "#33091"
+msgid "Mintcream"
+msgstr ""
+
+msgctxt "#33092"
+msgid "Mistyrose"
+msgstr ""
+
+msgctxt "#33093"
+msgid "Moccasin"
+msgstr ""
+
+msgctxt "#33094"
+msgid "Navajowhite"
+msgstr ""
+
+msgctxt "#33095"
+msgid "Navy"
+msgstr ""
+
+msgctxt "#33096"
+msgid "None"
+msgstr ""
+
+msgctxt "#33097"
+msgid "Oldlace"
+msgstr ""
+
+msgctxt "#33098"
+msgid "Olive"
+msgstr ""
+
+msgctxt "#33099"
+msgid "Olivedrab"
+msgstr ""
+
+msgctxt "#33100"
+msgid "Orange"
+msgstr ""
+
+msgctxt "#33101"
+msgid "Orangered"
+msgstr ""
+
+msgctxt "#33102"
+msgid "Orchid"
+msgstr ""
+
+msgctxt "#33103"
+msgid "Palegoldenrod"
+msgstr ""
+
+msgctxt "#33104"
+msgid "Palegreen"
+msgstr ""
+
+msgctxt "#33105"
+msgid "Paleturquoise"
+msgstr ""
+
+msgctxt "#33106"
+msgid "Palevioletred"
+msgstr ""
+
+msgctxt "#33107"
+msgid "Papayawhip"
+msgstr ""
+
+msgctxt "#33108"
+msgid "Peachpuff"
+msgstr ""
+
+msgctxt "#33109"
+msgid "Peru"
+msgstr ""
+
+msgctxt "#33110"
+msgid "Pink"
+msgstr ""
+
+msgctxt "#33111"
+msgid "Plum"
+msgstr ""
+
+msgctxt "#33112"
+msgid "Powderblue"
+msgstr ""
+
+msgctxt "#33113"
+msgid "Purple"
+msgstr ""
+
+msgctxt "#33114"
+msgid "Red"
+msgstr ""
+
+msgctxt "#33115"
+msgid "Rosybrown"
+msgstr ""
+
+msgctxt "#33116"
+msgid "Royalblue"
+msgstr ""
+
+msgctxt "#33117"
+msgid "Saddlebrown"
+msgstr ""
+
+msgctxt "#33118"
+msgid "Salmon"
+msgstr ""
+
+msgctxt "#33119"
+msgid "Sandybrown"
+msgstr ""
+
+msgctxt "#33120"
+msgid "Seagreen"
+msgstr ""
+
+msgctxt "#33121"
+msgid "Seashell"
+msgstr ""
+
+msgctxt "#33122"
+msgid "Sienna"
+msgstr ""
+
+msgctxt "#33123"
+msgid "Silver"
+msgstr ""
+
+msgctxt "#33124"
+msgid "Skyblue"
+msgstr ""
+
+msgctxt "#33125"
+msgid "Slateblue"
+msgstr ""
+
+msgctxt "#33126"
+msgid "Slategray"
+msgstr ""
+
+msgctxt "#33127"
+msgid "Snow"
+msgstr ""
+
+msgctxt "#33128"
+msgid "Springgreen"
+msgstr ""
+
+msgctxt "#33129"
+msgid "Steelblue"
+msgstr ""
+
+msgctxt "#33130"
+msgid "Tan"
+msgstr ""
+
+msgctxt "#33131"
+msgid "Teal"
+msgstr ""
+
+msgctxt "#33132"
+msgid "Thistle"
+msgstr ""
+
+msgctxt "#33133"
+msgid "Tomato"
+msgstr ""
+
+msgctxt "#33134"
+msgid "Turquoise"
+msgstr ""
+
+msgctxt "#33135"
+msgid "Violet"
+msgstr ""
+
+msgctxt "#33136"
+msgid "Wheat"
+msgstr ""
+
+msgctxt "#33137"
+msgid "White"
+msgstr ""
+
+msgctxt "#33138"
+msgid "Whitesmoke"
+msgstr ""
+
+msgctxt "#33139"
+msgid "Yellow"
+msgstr ""
+
+msgctxt "#33140"
+msgid "Yellowgreen"
+msgstr ""
+
+
 
