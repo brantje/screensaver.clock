@@ -5,7 +5,7 @@
        provider-name="brantje,kibje">
   <requires>
     <import addon="xbmc.python"
-            version="2.0"/>
+            version="2.1.0"/>
   </requires>
   <extension point="xbmc.ui.screensaver"
              library="default.py" />
